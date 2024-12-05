@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+  font-family: "Roboto", sans-serif;
+  outline: none;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1 {
+  color: white;
+  display: block;
+  margin: 50px auto;
+  font-weight: 900;
+  font-size: 120px;
+
+  letter-spacing: 10px;
+  margin-bottom: 20px;
+
+  animation: bounce 1s infinite alternate;
+  -webkit-animation: bounce 1s infinite alternate;
+
+  color: #ffff;
+  text-align: center;
+  text-shadow: 0 0 30px green;
+}
+
+img {
+  height: 300px;
+  display: block;
+  margin: auto;
+}
+
+h2 {
+  color: white;
+  margin-top: 20px;
+  font-size: 50px;
+  text-shadow: 0 0 30px green; 
+  animation: alternate;
+  -webkit-animation: bounce 1s infinite alternate;
+
+}
+
+footer {
+  color: white;
+  margin-bottom: 10px;
+  font-size: 17px;
+  margin-right: 73%;
+  text-shadow: 0 0 30px green;
+}
+
+button {
+  color: white;
+  background-color: green;
+  width: 340px;
+  height: 70px;
+  border-radius: 20px;
+  border: none;
+  font-size: 40px;
+  cursor: pointer;
+  margin-top: 150px;
+  margin-bottom: 85px;
+}
+
+button:hover {
+  opacity: 0.8;
+  transition: ease-in-out 0.4s;
+  transform: scale(1.1);
+}
+
+button:active {
+  opacity: 0.4;
+}
+
+.input-min,
+.input-max {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: white;
+  width: 342px;
+  height: 74px;
+  padding: 18px;
+  border-radius: 14px;
+  border: none;
+  font-size: 30px;
+  appearance: none;
+}
+.box-inputs {
+  margin-top: 20px;
+}
+.input-min {
+  margin-right: 40px;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+} 
+
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+@media screen and (min-height:700px) {
+    footer{
+      display: flex;
+      flex-direction: row;
+        font-size: 10px;
+        
+    }
+    
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+    h1{
+      
+        font-size: 60px;
+        font-weight: 800;
+    
+    }
+
+img{
+    height: 350px;
+}
+
+
+
+    h2{
+font-size: 20px;
+        
+    }
+
+    .box-inputs{
+        display: flex;
+        flex-direction: column;
+        width: 110px;
+        height: 80px;
+        margin-right: 230px;
+    }
+    .input-max, .input-min{
+        margin-top: 20px;
+       
+    }
+    
+    button{
+        width: 200px;
+        height: 50px;
+        font-size: 30px;
+    }
+
+  
+}
